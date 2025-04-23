@@ -7,3 +7,9 @@ type Todo struct {
 	UserID string `json:"userId"`
 	User   *User  `json:"user"`
 }
+
+func (t *Todo) IsNode() {}
+
+func (t *Todo) GetID() string {
+	return t.ID
+}

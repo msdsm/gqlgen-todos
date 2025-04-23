@@ -2,6 +2,11 @@
 
 package model
 
+type Node interface {
+	IsNode()
+	GetID() string
+}
+
 type Mutation struct {
 }
 
